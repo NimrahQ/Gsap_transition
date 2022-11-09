@@ -1,92 +1,257 @@
-html{
-    background-color:#000 ;
-    /* linear-gradient( 10%, #282c2b 85%,#282c2b 90%) */
-    height: 100%;
-    line-height: 1.5;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    box-sizing: border-box;
-    color: #fff;
-}
-html,body{
-    font-family: sans-serif;
-    font-size: 16px;
-    min-height: 100%;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing:antialiased;
-}
-.section{
-    min-height: 100vh;
-}
-img{
-    max-width: 100%;
-}
-h1, h2 , h3 , h4{
-    font-family: serif;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-}
-h1{
-    font-size: 10vw;
-    line-height: 1;
-    margin-top: 0;
-    font-weight: 700;
-}
-.contain{
-    margin: 0 10%;
-}
-.hero-text{
-    width: 80%;
-    float: left;
-}
-.cat{
-    font-size: 18px;
-    letter-spacing: 2px;
-    position: relative;
-    display: inline-block;
-    text-transform: uppercase;
-    color: #fff;
-    margin-top: 30px;
-}
-.cat.margin-bottom{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Island+Moments&family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,600&family=Orbitron:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-    margin-bottom: 1rem;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.description{
-    letter-spacing: 1px;
-    width: 60%;
-    float: left;
-    margin-bottom: 1rem;
-}
-.description p{
-    font-family: serif;
-    font-size: 1.2rem;
-}
-#bg{
-    z-index: -1;
-    position: fixed;
-    top: 0%;
-    left: 0%;
+body{
+    background: url(images/portrait-pink-haired-curly-thoughtful-woman-purple-sweater-fuchsia-sunglasses-posing-isolated-wall.jpg);
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+    background-size: center ;
+    background-repeat: no-repeat;
+    background-color: #f099AC;
 }
-#bg img{
+
+html{
+    font-family: 'Dancing Script', serif;
+    font-size: 10px;
+}
+header{
+    width: 100%;
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    max-width: 1500px;
+    top: 0;
+    left: 0;
+    padding: 3rem 0;
+    z-index: 1;
 }
-.images{
+.container{
+    max-width: 140rem;
+    margin: 0  auto;
+    padding: 0 1.5rem;
+}
+.nav{
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-   
+    justify-content: space-between;
 }
-.image-one img{
-    margin: 2rem;
-    width: 400px;
-    height: 14vw;
+.nav-logo{
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    /* border-bottom: 1px solid white; */
+
+    text-decoration: none;
+    color: #fff;
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+}
+.nav-item{
+    margin:0 2.5rem;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    transition:  color .5s;
+}
+.nav-link:hover{
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: rgb(129, 129, 129, .5);
+}
+.shoppingbag{
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    transform: translateX(-2rem);
+}
+.bag-count{
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+    background-color: #000;
+    font-size: 1.2rem;
+    font-style: normal;
+    border-radius: 50%;
+    position: absolute;
+    top: -1rem;
+    right: -2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+.text{
+ 
+    color: #fff;
+    flex: 1;
+    text-transform: uppercase;
+}
+.text h1{
+    color: rgb(204, 43, 137);
+    font-size: calc(1rem + 4vw);
+    font-weight: 800;
+    line-height: 1.2;
+}
+.text h1 span{
+    color: rgb(255, 255, 255);
+}
+.text h5{
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin: 8rem 0 4rem 0;
+}
+.text p{
+  
+    text-transform: capitalize;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.cta{
+    display: inline-block;
+    font-size: 1.4rem;
+    background-color: #000;
+    font-weight: 800;
+    padding:1.5rem 3rem;
+    color: #fff;
+    text-decoration: none;
+}
+cta:hover{
+    background-color: #333;
+}
+.watch-wrapper{
+   
+    margin: 10rem 0 0 28rem;
+    rotate: 37deg;
+}
+.watch-wrapper img{
+    width: 60vh;
+}
+.circle{
+    position: absolute;
+}
+.circle-small{
+    top: -15rem;
+    left: -21rem;
+}
+.circle-large{
+    right: -42rem;
+    bottom: 0rem;
+  
+}
+.circle-large img{
+    height: 100vh;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    top: 0;
+    left: 0;
+ } 
+.layer-1{
+    flex: 1;
+}
+.layer-2{
+    flex: 1;
+}
+.layer-3{
+    flex: 1;
+} 
+.layer{
+    background-color: #000;
+}
+@media screen and  (max-width:1024px) {
+
+    .watch-wrapper img{
+    width: 50vh;
+}
+.circle-large img{
+    height: 70vh;
+}
+.nav-logo{
+    margin: auto;
+    width: fit-content;
+    font-size: 3rem;
+}
+.nav-list{
+    display: none;
+}
+.watch-wrapper{
+   
+ margin: auto;
+ width: fit-content;
+    rotate:0deg;
+}
+}
+@media screen and  (max-width:768px){
+    .watch-wrapper{
+        margin-bottom: 6rem;
+    }
+    
+    .watch-wrapper img{
+        width: 60vh;
+    }
+    .layer-3{
+        display: none;
+    }
+    .layer-2{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .text{
+        margin: 17rem 0 0 0;
+    }
+    .text h5 {
+        margin: 1rem 0 1rem 0;
+    }
+    .watch-wrapper {
+        margin-right: 1rem;
+    }
+}
+@media screen and  (max-width:425px){
+    .text{
+        margin: 20rem 0 0 0;
+    }
+    .watch-wrapper {
+        margin-right: 3rem;
+    }
+    .watch-wrapper img{
+        width: 50vh;
+    }
+}
+@media screen and  (max-width:322px){
+    .watch-wrapper img{
+        width: 40vh;
+    }
 }
